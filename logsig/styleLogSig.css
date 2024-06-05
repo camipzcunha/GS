@@ -64,6 +64,7 @@ header{
   color: var(--background-color);
   transition: 0.2s all linear;
   box-shadow: 4px 4px 20px rgba(6, 23, 23, 0.2);
+  border-radius: 5px;
 }
 
 .heading{
@@ -91,11 +92,12 @@ header{
 section {
   display: flex;
   position: relative;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px 20px 20px 20px;
+  margin-bottom: 5rem;
 }
 
 section .container {
