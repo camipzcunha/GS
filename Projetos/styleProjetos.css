@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root{
+    --primary-color: #004c91;
+    --secundary-color: #29c5a6;
+    --text-color: #243448;
+    --background-color: #fff;
+} 
+
+body{
+    color: var(--text-color);
+}
+
+header{
+    background: var(--background-color);
+    color: var(--text-color);
+    display: block;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #004c91;
+    text-transform: uppercase;
+}
+  
+.logo span{
+    color: var(--secundary-color);
+}
+
+.navbar{
+    display: flex;
+    column-gap: 1rem;
+}
+
+.navbar a{
+    padding: 8px 10px;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    background: var(--primary-color);
+    color: var(--background-color);
+    transition: 0.2s all linear;
+    box-shadow: 4px 4px 20px rgb(15 54 55 / 20%);
+    border-radius: 5px;
+}
+
+.navbar a.active{
+    background: var(--primary-color);
+    color: var(--background-color);
+}
+
+.btn{
+    padding: 10px 22px;
+    background: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 3px;  
+    margin-right: 10px;
+  }
+  
+.btn:hover{
+    background: #055caf;
+    color: var(--background-color);
+    transition: 0.2s all linear;
+}
+
+#projetosCadastrados{
+    border: 2px solid var(--text-color);
+    width: 80%;
+    height: auto;
+    padding: 20px 60px;
+    margin: 10% auto 10%;
+    border-radius: 10px;
+}
+
+#projetosCadastrados h1{
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+#projetosCadastrados .nomeProjeto{
+    text-align: left;
+}
+
+#listaProjetos .solucao{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+
+
+#container{
+    height: 780px;
+    width: 70%;
+    margin: 10% auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+#container-forms{
+    display: inline-block;
+    width: 48%;
+    margin-top: 1px;
+    padding: 20px 0 20px 20px;
+}
+
+#container-forms h2{
+    text-align: center;
+    color: #092A5C;
+    margin: 25px 0 25px 0;
+    font-size: 25px;
+}
+
+.dados label{
+    font-size: 15px;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    margin-left: 35px;
+}
+
+.dados input{
+    height: 30px;
+    width: 95%;
+    border-radius: 4px;
+    border: 2px solid #b9a7a7d3;
+    margin-top: 8px;
+    font-size: 16px;
+	display: block;
+    padding: 0 2px;
+}
+
+.dados textarea{
+    border-radius: 4px;
+    border: 2px solid #b9a7a7d3;
+	display: block;
+    margin-top: 8px;
+    font-size: 16px;
+    width: 95%;
+    padding: 0 2px;
+}
+
+.dados input:focus{
+    outline: 0;
+}
+
+.dados.successo{
+    border-color: #09c372;
+}
+
+.dados.erro input{
+    border-color: #ff3860;
+}
+
+.dados .erro{
+    color: #ff3860;
+    font-size: 13px;
+}
+
+.dados input::placeholder{
+    font-size: 13px;
+}
+
+.dados textarea::placeholder{
+    font-size: 13px;
+}
+
+button{
+    height: 34px;
+    width: 38%;
+    float: right;
+    margin: 4% 5%;
+    border: none;
+    border-radius: 4px;
+    background-color: #092A5C;
+    color: #fff;
+    font-size: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+    background: #055caf;
+    color: var(--background-color);
+    transition: 0.2s all linear;
+}
+
+#containerFotos{
+    float: right;
+    width: 48%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+}
+
+.container-imgs{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    height: 100%;
+}
+
+.img{
+    object-fit: cover;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#titulo{
+    color: #fff;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 350%;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    top:-58%; 
+}
+
